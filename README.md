@@ -30,8 +30,9 @@ var expected = JsonSorter.getSortedJson({ "f1" : "Just wanted to say", "f2" : "I
 var actual = JsonSorter.getSortedJson({ "f2" : "I love you", "f1" : "Just wanted to say" })
 Assert.assertEquals(expected, actual)
 ```
-### Usage
-#### Maven
+## Usage
+Library is being published to Maven Central Repository, so usage is same as any other library.
+### Maven
 ```xml
 <dependencies>
     <dependency>
@@ -42,9 +43,10 @@ Assert.assertEquals(expected, actual)
 </dependencies>
 ```
 
-#### Gradle
+### Gradle
 ```gradle
 dependencies {
     implementation 'io.siniavtsev:jjjson:1.0.0'
 }
 ```
+
