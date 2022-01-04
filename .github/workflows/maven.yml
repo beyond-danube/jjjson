@@ -24,3 +24,8 @@ jobs:
         cache: maven
     - name: Run Tests
       run: mvn test
+    - name: Publish Test Report
+      uses: mikepenz/action-junit-report@v2
+      if: always()
+      with:
+        report_paths: '**/target/surefire-reports/*.xml'
